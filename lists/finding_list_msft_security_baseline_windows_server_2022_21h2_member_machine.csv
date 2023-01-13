@@ -49,7 +49,6 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 10309,"User Rights Assignment","Create permanent shared objects",accesschk,SeCreatePermanentPrivilege,,,,,,,,=,Medium
 10310,"User Rights Assignment","Debug programs",accesschk,SeDebugPrivilege,,,,,,BUILTIN\Administrators,BUILTIN\Administrators,=,Medium
 10311,"User Rights Assignment","Deny access to this computer from the network",accesschk,SeDenyNetworkLogonRight,,,,,,COMPUTERNAME\Guest,"NT AUTHORITY\Local account and member of Administrators group",=,Medium
-10312,"User Rights Assignment","Deny log on through Remote Desktop Services",accesschk,SeDenyRemoteInteractiveLogonRight,,,,,,,"NT AUTHORITY\Local account",=,Medium
 10313,"User Rights Assignment","Enable computer and user accounts to be trusted for delegation",accesschk,SeEnableDelegationPrivilege,,,,,,,,=,Medium
 10314,"User Rights Assignment","Force shutdown from a remote system",accesschk,SeRemoteShutdownPrivilege,,,,,,BUILTIN\Administrators,BUILTIN\Administrators,=,Medium
 10315,"User Rights Assignment","Impersonate a client after authentication",accesschk,SeImpersonatePrivilege,,,,,,"NT AUTHORITY\SERVICE;BUILTIN\Administrators;NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE","NT AUTHORITY\SERVICE;BUILTIN\Administrators;NT AUTHORITY\NETWORK SERVICE;NT AUTHORITY\LOCAL SERVICE",=,Medium
@@ -317,11 +316,6 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 11015,"Microsoft Defender Antivirus","Real-time Protection: Turn on behavior monitoring (Policy)",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection",DisableBehaviorMonitoring,,,,0,0,=,Medium
 11031,"Microsoft Defender Antivirus","Real-time Protection: Turn on script scanning",Registry,,"HKLM:\Software\Policies\Microsoft\Windows Defender\Real-Time Protection",DisableScriptScanning,,,,0,0,=,Medium
 10976,"Microsoft Defender Antivirus","Scan: Scan removable drives",Registry,,"HKLM:\Software\Policies\Microsoft\Windows Defender\Scan",DisableRemovableDriveScanning,,,,1,0,=,Medium
-10960,"Administrative Templates: Windows Components","Remote Desktop Connection Client: Do not allow passwords to be saved",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services",DisablePasswordSaving,,,,0,1,=,Medium
-10961,"Administrative Templates: Windows Components","Remote Desktop Session Host: Device and Resource Redirection: Do not allow drive redirection",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services",fDisableCdm,,,,0,1,=,Medium
-10962,"Administrative Templates: Windows Components","Remote Desktop Session Host: Security: Always prompt for password upon connection",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services",fPromptForPassword,,,,0,1,=,Medium
-10963,"Administrative Templates: Windows Components","Remote Desktop Session Host: Security: Require secure RPC communication",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services",fEncryptRPCTraffic,,,,0,1,=,Medium
-10964,"Administrative Templates: Windows Components","Remote Desktop Session Host: Security: Set client connection encryption level",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services",MinEncryptionLevel,,,,0,3,=,Medium
 10970,"Administrative Templates: Windows Components","RSS Feeds: Prevent downloading of enclosures",Registry,,"HKLM:\Software\Policies\Microsoft\Internet Explorer\Feeds",DisableEnclosureDownload,,,,0,1,=,Medium
 10971,"Administrative Templates: Windows Components","Search: Allow indexing of encrypted files",Registry,,"HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search",AllowIndexingEncryptedStoresOrItems,,,,1,0,=,Medium
 11001,"Administrative Templates: Windows Components","Windows Ink Workspace: Allow Windows Ink Workspace",Registry,,HKLM:\Software\Policies\Microsoft\WindowsInkWorkspace,AllowWindowsInkWorkspace,,,,1,1,=,Low
