@@ -4,12 +4,6 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 1100,"Account Policies","Account lockout threshold",accountpolicy,,,,,,,Never,10,<=,Low
 1101,"Account Policies","Account lockout duration",accountpolicy,,,,,,,30,15,>=,Low
 1102,"Account Policies","Reset account lockout counter",accountpolicy,,,,,,,30,15,>=,Low
-1200,"User Rights Assignment","Access this computer from the network",accesschk,SeNetworkLogonRight,,,,,,"BUILTIN\Backup Operators;BUILTIN\Users;BUILTIN\Administrators;Everyone",BUILTIN\Administrators,=,Medium
-1201,"User Rights Assignment","Allow log on locally",accesschk,SeInteractiveLogonRight,,,,,,"BUILTIN\Backup Operators;BUILTIN\Users;BUILTIN\Administrators;COMPUTERNAME\Guest",BUILTIN\Users;BUILTIN\Administrators,=,Medium
-1202,"User Rights Assignment","Debug programs",accesschk,SeDebugPrivilege,,,,,,BUILTIN\Administrators,,=,Medium
-1203,"User Rights Assignment","Deny access to this computer from the network",accesschk,SeDenyNetworkLogonRight,,,,,,COMPUTERNAME\Guest,"BUILTIN\Guests;NT AUTHORITY\Local account",=,Medium
-1204,"User Rights Assignment","Deny log on as a batch job",accesschk,SeDenyBatchLogonRight,,,,,,,BUILTIN\Guests,=,Medium
-1205,"User Rights Assignment","Deny log on as a service",accesschk,SeDenyServiceLogonRight,,,,,,,BUILTIN\Guests,=,Medium
 1300,"Security Options","Accounts: Block Microsoft accounts",Registry,,HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,NoConnectedUser,,,,0,3,=,Low
 1301,"Security Options","Audit: Force audit policy subcategory settings to override audit policy category settings",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,SCENoApplyLegacyAuditPolicy,,,,1,1,=,Low
 1302,"Security Options","Interactive logon: Do not require CTRL+ALT+DEL",Registry,,HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System,DisableCAD,,,,1,0,=,Low
