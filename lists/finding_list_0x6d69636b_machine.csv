@@ -17,7 +17,6 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 1310,"Security Options","Network access: Do not allow anonymous enumeration of SAM accounts and shares",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,RestrictAnonymous,,,,0,1,=,Medium
 1311,"Security Options","Network access: Do not allow storage of passwords and credentials for network authentication",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,DisableDomainCreds,,,,0,1,=,Medium
 1324,"Security Options","Network access: Restrict anonymous access to Named Pipes and Shares",Registry,,HKLM:\System\CurrentControlSet\Services\LanManServer\Parameters,RestrictNullSessAccess,,,,1,1,=,Medium
-1325,"Security Options","Network access: Restrict clients allowed to make remote calls to SAM",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,RestrictRemoteSAM,,,,,O:BAG:BAD:(A;;RC;;;BA),=,Medium
 1312,"Security Options","Network security: Allow LocalSystem NULL session fallback",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa\MSV1_0,allownullsessionfallback,,,,0,0,=,Medium
 1326,"Security Options","Network security: Do not store LAN Manager hash value on next password change",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,NoLMHash,,,,1,1,=,High
 1313,"Security Options","Network security: LAN Manager authentication level",Registry,,HKLM:\System\CurrentControlSet\Control\Lsa,LmCompatibilityLevel,,,,3,5,=,Medium
@@ -142,10 +141,6 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 1686,"Administrative Templates: System","Sleep Settings: Require a password when a computer wakes (on battery)",Registry,,HKLM:\Software\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51,DCSettingIndex,,,,0,1,=,Medium
 1687,"Administrative Templates: System","Sleep Settings: Allow standby states (S1-S3) when sleeping (plugged in)",Registry,,HKLM:\Software\Policies\Microsoft\Power\PowerSettings\abfc2519-3608-4c2a-94ea-171b0ed546ab,ACSettingIndex,,,,1,0,=,Medium
 1688,"Administrative Templates: System","Sleep Settings: Allow standby states (S1-S3) when sleeping (on battery)",Registry,,HKLM:\Software\Policies\Microsoft\Power\PowerSettings\abfc2519-3608-4c2a-94ea-171b0ed546ab,DCSettingIndex,,,,1,0,=,Medium
-1690,"Administrative Templates: System","Remote Assistance: Configure Offer Remote Assistance",Registry,,"HKLM:\Software\policies\Microsoft\Windows NT\Terminal Services",fAllowUnsolicited,,,,1,0,=,Medium
-1691,"Administrative Templates: System","Remote Assistance: Configure Solicited Remote Assistance",Registry,,"HKLM:\Software\policies\Microsoft\Windows NT\Terminal Services",fAllowToGetHelp,,,,1,0,=,Medium
-1692,"Administrative Templates: System","Remote Procedure Call: Enable RPC Endpoint Mapper Client Authentication",Registry,,"HKLM:\Software\Policies\Microsoft\Windows NT\Rpc",EnableAuthEpResolution,,,,0,1,=,Medium
-1693,"Administrative Templates: System","Remote Procedure Call: Restrict Unauthenticated RPC clients",Registry,,"HKLM:\Software\Policies\Microsoft\Windows NT\Rpc",RestrictRemoteClients,,,,0,2,=,Medium
 1694,"Administrative Templates: System","Security Settings: Enable svchost.exe mitigation options",Registry,,HKLM:\SYSTEM\CurrentControlSet\Control\SCMConfig,EnableSvchostMitigationPolicy,,,,0,1,=,Medium
 1695,"Administrative Templates: System","Windows Performance PerfTrack: Enable/Disable PerfTrack",Registry,,HKLM:\SOFTWARE\Policies\Microsoft\Windows\WDI\{9c5a40da-b965-4fc3-8781-88dd50a6299d},ScenarioExecutionEnabled,,,,1,0,=,Medium
 1696,"Administrative Templates: System","User Profiles: Turn off the advertising ID",Registry,,HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo,DisabledByGroupPolicy,,,,0,1,=,Medium
@@ -272,11 +267,9 @@ ID,Category,Name,Method,MethodArgument,RegistryPath,RegistryItem,ClassName,Names
 1753,"Administrative Templates: Windows Components","WinRM Client: Allow Basic authentication",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Client,AllowBasic,,,,1,0,=,Medium
 1754,"Administrative Templates: Windows Components","WinRM Client: Allow unencrypted traffic",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Client,AllowUnencryptedTraffic,,,,1,0,=,Medium
 1755,"Administrative Templates: Windows Components","WinRM Client: Disallow Digest authentication",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Client,AllowDigest,,,,1,0,=,Medium
-1756,"Administrative Templates: Windows Components","WinRM Service: Allow remote server management through WinRM",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Service,AllowAutoConfig,,,,1,0,=,Medium
 1757,"Administrative Templates: Windows Components","WinRM Service: Allow Basic authentication",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Service,AllowBasic,,,,1,0,=,Medium
 1758,"Administrative Templates: Windows Components","WinRM Service: Allow unencrypted traffic",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Service,AllowUnencryptedTraffic,,,,1,0,=,Medium
 1759,"Administrative Templates: Windows Components","WinRM Service: Disallow WinRM from storing RunAs credentials",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Service,DisableRunAs,,,,0,1,=,Medium
-1760,"Administrative Templates: Windows Components","Windows Remote Shell: Allow Remote Shell Access",Registry,,HKLM:\Software\Policies\Microsoft\Windows\WinRM\Service\WinRS,AllowRemoteShellAccess,,,,1,0,=,Medium
 2000,"Administrative Templates: Windows Components","File Explorer: Configure Windows Defender SmartScreen",Registry,,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,EnableSmartScreen,,,,1,1,=,Medium
 2001,"Administrative Templates: Windows Components","File Explorer: Configure Windows Defender SmartScreen to warn and prevent bypass",Registry,,HKLM:\SOFTWARE\Policies\Microsoft\Windows\System,ShellSmartScreenLevel,,,,Warn,Block,=,Medium
 2100,PowerShell,"Turn on PowerShell Script Block Logging",Registry,,HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging,EnableScriptBlockLogging,,,,0,1,=,Medium
